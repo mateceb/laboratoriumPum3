@@ -9,6 +9,14 @@
     android:gravity="center"
     tools:context="com.example.lenovo.laboratoriumpum3.Main2Activity">
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/Recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
