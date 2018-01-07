@@ -6,7 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -25,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.insert_name)
     EditText insert_name_city;
+
+    @BindView(R.id.picture)
+    ImageView obrazek;
 
     @OnClick(R.id.button_change_place)
     void onClick()
@@ -49,7 +55,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        bundle = new Bundle();
+        Glide.with(getApplicationContext())
+                .load("https://cdn.pixabay.com/photo/2013/04/01/09/21/lightning-98499_960_720.png")
+                .into(obrazek);
+
+        Intent getData = getIntent();
+        Bundle bundle = getIntent().getExtras();
+
+
+        if (bundle != null) {
+            String place = bundle.getString("CityName");
+            cityTv.setText(place);
+        }
     }
 
 

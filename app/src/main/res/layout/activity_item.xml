@@ -10,22 +10,28 @@
     tools:context="com.example.lenovo.laboratoriumpum3.Item">
 
     <TextView
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Miasto"
         android:textSize="20sp"
         android:id="@+id/name"
         android:textColor="@android:color/white"
-        android:layout_marginBottom="5sp"/>
+        android:layout_marginBottom="25sp"/>
 
     <TextView
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Info"
         android:textSize="20sp"
         android:id="@+id/information"
         android:textColor="@android:color/white"
-        android:layout_marginBottom="5sp"/>
+        android:layout_marginBottom="15sp"/>
 
 
 

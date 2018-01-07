@@ -10,6 +10,13 @@ public class Place {
     private String pleaceName;
     private String information;
 
+    public String getPleaceName() {
+        return pleaceName;
+    }
+
+    public void setPleaceName(String pleaceName) {
+        this.pleaceName = pleaceName;
+    }
 
     public int getTemperature() {
         return temperature;
@@ -19,13 +26,7 @@ public class Place {
         this.temperature = temperature;
     }
 
-    public String getPleaceName() {
-        return pleaceName;
-    }
 
-    public void setPleaceName(String pleaceName) {
-        this.pleaceName = pleaceName;
-    }
 
     public String getInformation() {
         return information;
